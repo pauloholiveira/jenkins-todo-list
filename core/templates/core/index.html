@@ -25,7 +25,7 @@
         <div class="card-action">
           {% if not todo.completed %}
                   <div class="alert alert-warning right">
-                    <a href="{% url 'completed' pk=todo.pk %}"><i class="fas fa-check fa-1x"></i></a>
+                    <a href="{% url 'completed' pk=todo.pk %}"><em class="fas fa-check fa-1x"></em></a>
                     <strong>Open since {{todo.created_at}}</strong>
                   </div>
           {% else %}
